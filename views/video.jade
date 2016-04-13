@@ -1,0 +1,18 @@
+extends layout
+
+block scripts
+ script(src='media/js/player.js')
+block content
+ section#player
+   video#media(width='720', height='400')
+     source(src='http://www.formasterminds.com/content/trailer.mp4')
+     source(src='http://www.formasterminds.com/content/trailer.ogv')
+   nav
+     #buttons
+       input#play(type='button', value='Play')
+       input#mute(type='button', value='Mute')
+     #bar
+       #progress
+     #control
+       input#volume(type='range', min='0', max='1', step='0.1', value='0.6')   
+     .clear
