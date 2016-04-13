@@ -58,9 +58,7 @@ h2 {
 	padding: 5px;
 	margin-top: 25px;
 }
-#form {
-	display:none;
-}
+
 .topmenu {
 	display: flex; /*все вложенные элементы будут гибкими*/
 	width: 100%;
