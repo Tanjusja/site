@@ -8,6 +8,7 @@ var bodyParser = require('body-parser'); /*подключили модули, о
 
 var routes = require('./routes'); /*подключили файл index.js в папке routes*/
 var users = require('./routes/user'); /*подключили файл index.js*/
+var video=require('./routes/video'); /*ПЕРЕМЕННАЯ*/
 
 var app = express(); /*инициализировали объект*/
 
@@ -23,9 +24,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public'))); /*указали что все статик-файлы находяться в папке public*/
 app.use(app.router);
 
-app.get('/', routes.index); /*прослушиваем главную страницу, маршрутизатор, вызывается routes.index; смотреть index.js*/
+app.get('/', routes.index); /*прослушиваем главную страницу, маршрутизатор; вызывается routes.index; смотреть index.js*/
 app.get('/users', users.list);
-app.get('/:id',routes.index);
+app.get('/video',video.index); /*ПРОСЛУШИВАТЕЛЬ*/
+app.get('/:id',routes.index); /*он должен быть последним, запускается как любой параметр, если имя отличается от главной (/)или users*/
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) { /*если не нужно останавливаться на этой функции, то переходим к след.*/

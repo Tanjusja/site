@@ -1,0 +1,170 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	background:url('../img/numbers5.jpg');
+	height: 200px;
+}
+
+#header img {
+	float: left;
+}
+
+#logotext{
+	position: absolute;
+	float: left;
+	font-size: 50px;
+	font-family: Source Sans, Tahoma;
+	padding: 50px;
+	color: black;
+	left: 200px;
+}
+
+h2 {
+	float: left;
+	font-size: 50px;
+	font-family: Source Sans, Tahoma;
+	padding: 52px;
+	color: white;
+	display:inline;
+}
+.call {
+	position: absolute;
+	width: 320px;
+	height: 100px;
+	right: 0px;
+	top: 60px;
+	padding: 0 20px;
+}
+
+#tel_call {
+	position: relative;
+	font-size: 30px;
+	font-family: Source Sans, Tahoma;
+	background-color: lightyellow;
+	color: black;
+	border: 2px solid teal;
+	border-radius: 10px;
+	padding: 5px;
+}
+.button_call {
+	position: relative;
+	width: 70%;
+	font-size: 20px;
+	font-family: Source Sans, Tahoma;
+	visibility: hidden;
+	padding: 5px;
+	margin-top: 25px;
+}
+#form {
+	display:none;
+}
+.topmenu {
+	display: flex; /*все вложенные элементы будут гибкими*/
+	width: 100%;
+	margin: 0 auto;
+}
+
+.topmenu a {
+	flex: 1;
+	display: block;
+	padding: 10px 0;
+	text-align: center;
+	color: lightyellow;
+	font-size: 15px;
+	font-weight: bold;
+	background: teal;
+	border-right: solid 1px lightyellow;
+	text-decoration: none;
+}
+
+.topmenu a:hover {
+	background: lightyellow;
+	color: black;
+}
+
+#leftmenu {
+	padding: 5px;
+	margin-top: 25px;
+	border: 15px solid teal;
+	border-radius: 10px;
+}
+
+.img_main {
+	padding-right: 15px;
+	float:left;
+}
+#player {
+	width: 740px;
+	margin: 20px auto;
+	padding: 10px 5px 10px 5px;
+	background: lightyellow;
+	border: solid 2px teal;
+	border-radius: 6px;
+}
+
+#play,#mute {
+	padding: 2px 10px;
+	width: 60px;
+	border: solid 1px teal;
+	background: teal;
+	color: white;
+	margin-right: 2px;
+	
+	font-weight: bold;
+	border-radius: 6px;
+}
+
+#bar {
+	float: left;
+	width: 400px;
+	height: 16px;
+	margin: 2px 5px;
+	border: 1px solid #ccc;
+	background: #ссс;
+}
+	
+#buttons {
+	float: left;
+	width: 135px;
+	height: 20px;
+	padding-left: 5px;
+} 
+
+#progress {
+width: 0;
+height: 15px;
+background: red;
+}
+
+.clear {
+	clear: both;
+}
+#control{
+ width: 163px;
+ float: left;
+ }
+ 
+#footer{
+	padding: 40px 0;
+	margin-top: 300px;
+	text-align: center;
+	background: teal;
+	color: white;
+}
+
+#footer a {
+	color: lightyellow;
+}
+
+
+@media screen and (max-width: 600px) {/*для устройств <600 напишем отдельное свойство, добавляем стили для всех экранов, ширина которых <600*/
+	.topmenu {
+		flex-direction:column;
+	}
+	#header {
+		height: 100px;
+	}
+}
