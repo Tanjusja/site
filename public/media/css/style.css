@@ -149,6 +149,17 @@ background: red;
 	box-shadow: 1px 1px 1px black;
 	border: 1px solid grey;
  }
+ 
+#dropbox{
+	height: 400px;
+	width: 300px;
+	float: right;
+	margin: 10px;
+	padding: 10px;
+	border: solid 1px black;
+	box-shadow: 1px 1px 1px black;
+	overflow: auto;
+	}
 #footer{
 	padding: 40px 0;
 	margin-top: 300px;

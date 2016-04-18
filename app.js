@@ -10,7 +10,8 @@ var routes = require('./routes'); /*подключили файл index.js в п
 var users = require('./routes/user'); /*подключили файл index.js*/
 var video=require('./routes/video'); /*ПЕРЕМЕННАЯ*/
 var anketa=require('./routes/anketa'); 
-var anketa=require('./routes/canvas');
+var canvas=require('./routes/canvas');
+var drop=require('./routes/drop');
 
 var app = express(); /*инициализировали объект*/
 
@@ -30,7 +31,8 @@ app.get('/', routes.index); /*прослушиваем главную стран
 app.get('/users', users.list);
 app.get('/video',video.index); /*ПРОСЛУШИВАТЕЛЬ*/
 app.get('/anketa',anketa.index);
-app.get('/canvas',anketa.index);
+app.get('/canvas',canvas.index);
+app.get('/drop',drop.index);
 app.get('/:id',routes.index); /*он должен быть последним, запускается как любой параметр, если имя отличается от главной (/)или users*/
 
 

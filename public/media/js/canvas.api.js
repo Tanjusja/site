@@ -21,7 +21,7 @@ addEventListener ('load', initiate); //к селектору добавляем 
 		canvas.strokeRect(300,100,120,120);
 		canvas.fillRect(310,110,100,100);
 		canvas.clearRect(320,120,80,80);
-		
+				
 		//кружочек
 		canvas.beginPath();
 		canvas.arc(200, 100, 50, 0, Math.PI*2, false);
@@ -44,7 +44,7 @@ addEventListener ('load', initiate); //к селектору добавляем 
 		canvas.closePath();
 		canvas.stroke();
 		canvas.restore();
-		
+		canvas.save();
 		//линии
 		canvas.lineWidth=10;
 		canvas.lineCap='round';
@@ -57,7 +57,7 @@ addEventListener ('load', initiate); //к селектору добавляем 
 		canvas.lineTo(195,155);
 		canvas.stroke();
 		canvas.lineWidth=1;
-		
+
 		//текст
 		canvas.font='bold 24px verdana';
 		canvas.textAlign='start'; //left
@@ -87,6 +87,16 @@ addEventListener ('load', initiate); //к селектору добавляем 
 		canvas.stroke();
 		
 		
+		canvas.restore();
+		
+		canvas.save();
+		//рисуночек
+		var img = document.createElement('img');
+		img.setAttribute('src', '/media/img/numbers4.jpg');
+		img.addEventListener('load', function(){
+		console.log(img);
+			canvas.drawImage(img,0,0);
+			});
 		
 		
 	}
