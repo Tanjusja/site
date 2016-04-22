@@ -13,6 +13,7 @@ var video=require('./routes/video'); /*ПЕРЕМЕННАЯ*/
 var anketa=require('./routes/anketa'); 
 var canvas=require('./routes/canvas');
 var drop=require('./routes/drop');
+var map=require('./routes/map');
 
 var app = express(); /*инициализировали объект*/
 
@@ -34,6 +35,7 @@ app.get('/video',video.index); /*ПРОСЛУШИВАТЕЛЬ*/
 app.get('/anketa',anketa.index);
 app.get('/canvas',canvas.index);
 app.get('/drop',drop.index);
+app.get('/map',map.index);
 app.get('/:id',routes.index); /*он должен быть последним, запускается как любой параметр, если имя отличается от главной (/)или users*/
 
 // catch 404 and forwarding to error handler
