@@ -159,8 +159,26 @@ background: red;
 	border: solid 1px black;
 	box-shadow: 1px 1px 1px black;
 	overflow: auto;
-	}
-
+}
+#formbox{
+	float:left;
+	padding: 20px;
+	border: solid 1px #999;
+}
+#databox{
+	float:left;
+	width: 400px;
+	margin-left: 20px;
+	padding: 20px;
+	border: solid 1px #999;
+}
+#keyword,#text {
+	width: 200 px;
+}
+#databox>div {
+	padding: 5px;
+	border-bottom: 1px solid #999;
+}
 #footer{
 	padding: 40px 0;
 	margin-top: 300px;

@@ -58,8 +58,10 @@ addEventListener ('load', initiate); //к селектору добавляем 
 		e.preventDefault(); //отмена действия по умолчанию
 		var files = e.dataTransfer.files;
 		var list = '';
-		for(var f=0; f<files.lenght;f++){
+		for(var f=0; f<files.length;f++){
 			list+='Файл: ' + files[f].name + ' ' + files[f].size + '<br>';
+			console.log(list);
 		}
 		drop.innerHTML = list;
+		//console.log(files);
 	}

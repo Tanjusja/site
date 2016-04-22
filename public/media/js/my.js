@@ -16,12 +16,13 @@ $(function(){
 		},
 		});
 		
-		$('.leftmenu a').bind({'click':function(){
+		$('#leftmenu a').bind({'click':function(){
 			data=$(this).attr('data-title'); 		
 			data2=$(this).attr('data-body'); 		
 			data3=$(this).attr('data-url'); 		
 			$('.h3main').text(data);
 			$('.main').html(data2);
+			console.log(data);
 			$('.img_main').html('<img src='+data3+'>');
 			}	
 		});
