@@ -9,7 +9,6 @@ head
   // не более 255 символов
   link(href='media/bootstrap-3.3.6-dist/css/bootstrap.min.css', rel='stylesheet')
   script(src='media/js/jquery-1.12.2.min.js')
-    <!--2 способ подключения<script src="https://code.jquery.com/jquery-1.12.0.min.js"><script>-->
   script(src='media/js/my.js')
   block scripts
   link(href='media/css/style.css', rel='stylesheet')
@@ -26,13 +25,12 @@ header#header
     a.btn.btn-success.btn-block.button_call(href='#') Позвонить 
     div
 nav.topmenu
-  a(href='#', data-url='media/img/numbers.jpg') Главная
-  // через дата можно передавать любые параметры
-  a(href='#', data-url='media/img/numbers2.jpg') Контакты
-  a(href='#', data-url='media/img/numbers3.png') Товары
-  a(href='#', data-url='media/img/numbers4.jpg') Дизайн
-  a(href='#', data-url='media/img/numbers5.jpg') Стоимость
-  a(href='#', data-url='media/img/numbers.jpg') Карта проезда
+  a(href='/home', data-url='media/img/numbers.jpg') Главная
+  a(href='/contact', data-url='media/img/numbers2.jpg') Контакты
+  a(href='/product', data-url='media/img/numbers3.png') Товары
+  a(href='/design', data-url='media/img/numbers4.jpg') Дизайн
+  a(href='/price', data-url='media/img/numbers5.jpg') Стоимость
+  a(href='/map', data-url='media/img/numbers.jpg') Карта проезда
 section.conta
   .col-md-2#leftmenu
     a.btn.btn-success.btn-block(href='#', data-title='Для чего нужна оцифровка видео?', data-url='media/img/article1.png', data-body='Оцифровка видео и аудио – это процесс перевода аудио- и видеозаписи с аудио- и видеокассеты в цифровой файл для дальнейшего хранения, конвертации, обработки и другого использования.\

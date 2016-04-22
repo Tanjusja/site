@@ -10,6 +10,10 @@ var routes = require('./routes'); /*подключили файл index.js в п
 var users = require('./routes/user'); /*подключили файл index.js*/
 var video=require('./routes/video'); /*ПЕРЕМЕННАЯ*/
 
+var anketa=require('./routes/anketa'); 
+var canvas=require('./routes/canvas');
+var drop=require('./routes/drop');
+
 var app = express(); /*инициализировали объект*/
 
 // view engine setup
@@ -27,16 +31,19 @@ app.use(app.router);
 app.get('/', routes.index); /*прослушиваем главную страницу, маршрутизатор; вызывается routes.index; смотреть index.js*/
 app.get('/users', users.list);
 app.get('/video',video.index); /*ПРОСЛУШИВАТЕЛЬ*/
+app.get('/anketa',anketa.index);
+app.get('/canvas',canvas.index);
+app.get('/drop',drop.index);
 app.get('/:id',routes.index); /*он должен быть последним, запускается как любой параметр, если имя отличается от главной (/)или users*/
 
-/// catch 404 and forwarding to error handler
+// catch 404 and forwarding to error handler
 app.use(function(req, res, next) { /*если не нужно останавливаться на этой функции, то переходим к след.*/
     var err = new Error('Not Found');
     err.status = 404;
     next(err); /*обработка ошибок*/
 });
 
-/// error handlers
+// error handlers
 
 // development error handler
 // will print stacktrace

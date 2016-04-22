@@ -1,0 +1,14 @@
+extends layout
+block scripts
+ script(src='/media/js/form.js')
+block content
+ h4 Анкета
+ section
+  form(name='anketa', method='post', id='form' action='/anketa')
+    label(for='firstname') Имя
+    input#firstname(type='text', name='firstname')
+    label(for='lastname') Фамилия
+    input#lastname(type='text', name='lastname')
+    label(for='email') Email
+    input#email(type='email', name='email')
+    button#button(name='button', required) Отправить
