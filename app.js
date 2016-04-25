@@ -15,6 +15,7 @@ var canvas=require('./routes/canvas');
 var drop=require('./routes/drop');
 var map=require('./routes/map');
 var storage=require('./routes/storage');
+var config=require('./config'); /*/*подключаемся к index.js*/
 
 var app = express(); /*инициализировали объект*/
 
@@ -38,6 +39,7 @@ app.get('/canvas',canvas.index);
 app.get('/drop',drop.index);
 app.get('/map',map.index);
 app.get('/storage',storage.index);
+
 app.get('/:id',routes.index); /*он должен быть последним, запускается как любой параметр, если имя отличается от главной (/)или users*/
 
 // catch 404 and forwarding to error handler
@@ -69,5 +71,6 @@ app.use(function(err, req, res, next) {
     });
 });
 
-app.listen(8129);
+//app.listen(8129);
+app.listen(config.get('port'));
 module.exports = app;
