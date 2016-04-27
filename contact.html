@@ -1,0 +1,60 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset='utf8'> <!--единственный тег который можно не закрывать (в xhtml)-->
+		<title>Контакты</title>
+		<meta name='description' content=''> <!--не более 255 символов-->
+		<meta name='keywords' content=''> <!--не более 255 символов-->
+		<link href='public/media/bootstrap-3.3.6-dist/css/bootstrap.min.css' rel='stylesheet'/>
+		<script src='public/media/js/jquery-1.12.2.min.js'> <!--2 способ подключения<script src="https://code.jquery.com/jquery-1.12.0.min.js"><script>-->
+		</script>
+		<link href='public/media/css/style.css' rel='stylesheet'/>
+	</head>
+	
+	<body>
+		<!--В html5 не стилистические теги, а семантические-->
+		<header id='header'> <!--ведут себя как div, блочные. Нужен для поисковика гугла-->
+			<img src='public/media/img/logo_e.png' width='200' height='200'/>
+			<h1 id='logotext'> <!--воспринимается как название (title), h1 единственный на сайте -->
+				Контакты
+			</h1>
+			<h2>Контакты</h2>
+
+		</header>
+		<nav class='topmenu'>
+			<a href='#' data-url='public/media/img/numbers.jpg'>Главная</a> <!--через дата можно передавать любые параметры-->
+            <a href='#' data-url='public/media/img/numbers2.jpg'>Контакты</a>
+			<a href='#' data-url='public/media/img/numbers3.png'>Товары</a>
+			<a href='#' data-url='public/media/img/numbers4.jpg'>Дизайн</a>
+			<a href='#' data-url='public/media/img/numbers5.jpg'>Стоимость</a>
+			<a href='#' data-url='public/media/img/numbers.jpg'>Карта проезда</a>
+			
+		</nav>
+		
+		<section class='conta'>
+			
+			<div class='col-md-8'>
+				<h3 class='h3main' align='center'> Наши контакты</h3>
+				<span class='img_main'><img src='public/media/img/contact.jpg' /></span>
+				<div class='main'>
+					<p><b>Адрес:</b> проспект Независимости 62, Минск</p>
+					<p><b>Телефон:</b> 8 017 292-62-85
+					<p><b><i>support@bytespace.by</i></b>
+					<p><b><i>http://bytespace.by/</i></b>
+					<p><b><i>https://vk.com/bytespaceby</i></b>
+					<p><b><i>http://facebook.com/bytespaceby</i></b>
+					<p><b><i>http://twitter.com/bytespaceby</i></b>
+				</div>
+                
+			</div>
+			
+		</section>
+	</body>
+	<br style='clear:both'/>
+	<footer id='footer'>
+	<a href='#'>
+	Дизайн
+	</a>
+	&copy 2016 narubina
+	</footer>
+</html>

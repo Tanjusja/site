@@ -1,0 +1,22 @@
+use kurs
+
+insert users
+save
+
+db.users.insert({username:'Вася'})
+
+db.users.update({username:'Вася'},{$set:{country:'Беларусь'}});
+
+db.users.update({username:'Вася'},{$set:{cities:['Минск','Брест','Полоцк'],movies:['Попугай Кеша','Рома']}});
+
+db.users.update({username:'Вася'},{$unset:{country:1}});
+
+db.users.remove();
+
+db.users.movies.remove();
+
+db.users.remove({'movies'});
+
+db.users.remove({username:'Вася'}.{'movies'});
+
+

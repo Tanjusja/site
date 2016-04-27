@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta charset='utf8'> <!--единственный тег который можно не закрывать (в xhtml)-->
+		<title>Обо мне</title>
+		<meta name='description' content=''> <!--не более 255 символов-->
+		<meta name='keywords' content=''> <!--не более 255 символов-->
+		<link href='public/media/bootstrap-3.3.6-dist/css/bootstrap.min.css' rel='stylesheet'/>
+		<script src='public/media/js/jquery-1.12.2.min.js'> <!--2 способ подключения<script src="https://code.jquery.com/jquery-1.12.0.min.js"><script>-->
+		</script>
+		<link href='public/media/css/style.css' rel='stylesheet'/>
+	</head>
+	
+	<body>
+		<!--В html5 не стилистические теги, а семантические-->
+		<header id='header'> <!--ведут себя как div, блочные. Нужен для поисковика гугла-->
+			<img src='public/media/img/logo_e.png' width='200' height='200'/>
+			<h1 id='logotext'> <!--воспринимается как название (title), h1 единственный на сайте -->
+				Обо мне
+			</h1>
+			<h2>Обо мне</h2>
+
+		</header>
+		<nav class='topmenu'>
+			<a href='#' data-url='public/media/img/numbers.jpg'>Главная</a> <!--через дата можно передавать любые параметры-->
+            <a href='#' data-url='public/media/img/numbers2.jpg'>Контакты</a>
+			<a href='#' data-url='public/media/img/numbers3.png'>Товары</a>
+			<a href='#' data-url='public/media/img/numbers4.jpg'>Дизайн</a>
+			<a href='#' data-url='public/media/img/numbers5.jpg'>Стоимость</a>
+			<a href='#' data-url='public/media/img/numbers.jpg'>Карта проезда</a>
+			
+		</nav>
+		
+		<section class='conta'>
+			
+			<div class='col-md-8'>
+				<h3 class='h3main' align='center'> Александров Александр </h3>
+				<span class='img_main'><img src='public/media/img/I.jpg' /></span>
+				<div class='main'>
+					<p><b>Год рождения:</b> 1992 г.</p>
+					<p><b>Страна проживания:</b> Беларусь</p>
+					<h4>Профессиональные навыки и знания</h4>
+					<ul>
+						<li>Языки программирования: C/C++, ASM</li>
+						<li>Опыт работы с процессорами и микроконтроллерами архитектур x86, Z80, 8080, 6502, Motorola 68k, PIC, ARMCortexM3, ARMCortexM4F (STM32).</li>
+						<li>Умение работать с системами контроля версий (Git).</li>
+						<li>Сетевые технологии: TCP/IP, DNS, DHCP, RAS, NAT, FTP, iSCSI, VLAN, FastEthernet 100 / 1000 / WiFi</li>
+						<li>Технологии VMware: vCenter, vDS, vSA, vSAN, HA, FT, DRS, EVC, vMotion, обслуживание, диагностика неполадок и поддержание всего этого добра в работающем состоянии 24/7.</li>
+						<li>Владею сертификатами CiscoITEssentials 4.0, CiscoCCNA 5 (Module 1), продолжаю обучение на CCNA.</li>
+						<li>Умение держать паяльник в руках </li>
+					</ul>
+					<h4>Хобби</h4>
+					<ul>
+						<li>Ретро-компьютеры (коллекционирование, ремонт, реставрация, организация выставок). Про одну из выставок, проводимых мной в БГУИРе, можно глянуть <a href='http://vk.com/byteex'>здесь.</a> На 1-м курсе полностью с нуля собрал персональные компьютеры Орион-128 и Орион-ПРО, занимался составлением для них Тест-ПЗУ, предоставляющих расширенные тесты железа, поскольку авторские тесты не запускались из-за проблем с пайкой.</li>
+						<li>Разработка различной периферии для ретро-ПК. Один из текущих проектов – звуковая карта SID-Blaster/ZXдля компьютера ZX-Spectrum. Более 80-ти микросхем, процессор 6502, прошивка на чистом ASM’е. Подробнее можно глянуть <a href='http://zxbyte.ru/sid_blaster.htm'>тут</a> и <a href='https://www.youtube.com/watch?v=yTC-lYrTCyM'>тут.</a></li>
+						<li>Радиолюбительство во всех его проявлениях. Припой, канифоль, паяльник &отвёртка, дальний радиоприём (DXing). Спутниковый приём ТВ, радио, радиолюбительских частот. Несколько раз успешно принимал сигналы с МКС в диапазоне 144Мгц.</li>
+						<li>Аудиофилия. Всю музыку дома слушаю только либо напрямую с винила, либо с бобин, записанных всё с того же винила. Занимаюсь ремонтом аудиотехники, настройкой/регулировкой бобинников и виниловых вертушек.</li>
+						<li>ОцифровкаVHS, Betacam, Video8/Hi8/D-8, Video2000, аудиокассет. Коллекционирование старых заставок, реклам, анонсов, телепередач со старого ТВ. Веду небольшой канал на YT (<a href='http://youtube.com/TheZXByteman'>http://youtube.com/TheZXByteman</a>). Веду небольшую исследовательскую работу, направленную на извлечение данных телетекста со старых VHS-ных записей. Есть большие успехи в этом направлении.</li>
+						
+					</ul>
+				</div>
+                
+			</div>
+			
+		</section>
+	</body>
+	<br style='clear:both'/>
+	<footer id='footer'>
+	<a href='#'>
+	Дизайн
+	</a>
+	&copy 2016 narubina
+	</footer>
+</html>
