@@ -1,0 +1,21 @@
+//модель
+var mongoose = require('../config/mongoose');
+Shema = mongoose.Shema; 
+var shema = new Shema({ 
+//локальный объект где будем хранить все
+	name:{
+		type:String,
+		required:true
+	},
+	body:{
+		type:String,
+		unique:true,
+		required:true
+	},
+	url:{
+		type:String,
+		unique:true,
+		required:true
+	}
+});
+exports.Maintext = mongoose.model('maintexts',shema); // экспортируется с двумя пар-ми :имя коллекции, структура

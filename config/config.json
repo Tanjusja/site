@@ -1,9 +1,13 @@
-{
-	"port":8129
-}
-{
-	"port":300,
-	title:''
-	keywords:''
-	description:''
+{	
+	"port":8129,
+	"mongoose":{
+		"uri":"mongodb://localhost/kurs",
+		"options": {
+			"server": {
+				"socketOptions": {
+				"keepAlive": 1
+				}
+			}
+		}
+	}
 }

@@ -1,0 +1,15 @@
+{
+	"port":8129
+}
+{	
+	"port":8800
+	"mongoose"{ //модуль для работы с базой mongo
+		"uri":"mongodb://localhost/kurs",
+		"options": {
+			"server": {
+				"socketOptions": {
+				"keepAlive": 1 //держать соединения
+				}
+			}
+		}
+	}

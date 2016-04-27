@@ -15,7 +15,8 @@ var canvas=require('./routes/canvas');
 var drop=require('./routes/drop');
 var map=require('./routes/map');
 var storage=require('./routes/storage');
-var config=require('./config'); /*/*подключаемся к index.js*/
+var config=require('./config'); /*подключаемся к index.js*/
+var add=require('./routes/add');
 
 var app = express(); /*инициализировали объект*/
 
@@ -41,6 +42,7 @@ app.get('/map',map.index);
 app.get('/storage',storage.index);
 
 app.get('/:id',routes.index); /*он должен быть последним, запускается как любой параметр, если имя отличается от главной (/)или users*/
+app.get('/:id/add',add.index);
 
 // catch 404 and forwarding to error handler
 app.use(function(req, res, next) { /*если не нужно останавливаться на этой функции, то переходим к след.*/
