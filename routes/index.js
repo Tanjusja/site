@@ -4,16 +4,17 @@ exports.index = function(req, res){
   if(req.params.id){
     var index=req.params.id;
 	} else {
-		var index='Hello';
+		var index='index';
 	}
-	findOne({url:index}, function(err,text){ //возвращает строку из коллекции (2 параметра: условие-json,  функция)
+	Maintext.findOne({url:index}, function(err,text){ //возвращает строку из коллекции (2 параметра: условие-json,  функция)
 		if(!text){
 		text = {
 		name: 'Добро пожалуйста',
 		body: 'Текст'
 			}
 		}
+		res.render('index', {text:text}); //имя переменной в шаблоне и значение переменной
 	});
-  res.render('index', { title: text });
+  
   
 };

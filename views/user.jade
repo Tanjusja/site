@@ -1,0 +1,23 @@
+extends layout
+
+block scripts
+ script(src='media/js/user.js')
+block content
+ form#form(method='post' action='users')
+   br
+   label
+     | Ваш e-mail  
+     input#email(type='email', name='email')
+   br
+   label
+     | Ваш логин  
+     input#login(type='text', name='login')
+   br
+   label
+     | Ваш пароль  
+     input#password(type='password', name='password')
+   br
+   input#submit(type='submit')
+ br
+ div(style='color:red')=err
+   

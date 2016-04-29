@@ -33,13 +33,14 @@ app.use(express.static(path.join(__dirname, 'public'))); /*указали что
 app.use(app.router);
 
 app.get('/', routes.index); /*прослушиваем главную страницу, маршрутизатор; вызывается routes.index; смотреть index.js*/
-app.get('/users', users.list);
+app.get('/users', users.index);
 app.get('/video',video.index); /*ПРОСЛУШИВАТЕЛЬ*/
 app.get('/anketa',anketa.index);
 app.get('/canvas',canvas.index);
 app.get('/drop',drop.index);
 app.get('/map',map.index);
 app.get('/storage',storage.index);
+app.post('/users',users.add); /*что прослушиваем, переменная*/
 
 app.get('/:id',routes.index); /*он должен быть последним, запускается как любой параметр, если имя отличается от главной (/)или users*/
 app.get('/:id/add',add.index);
