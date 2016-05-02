@@ -25,13 +25,14 @@ exports.add = function(req, res){
 	users.save(function(err,user){
 		
 			if(user){
-				console.log('Ok');
+				console.log('Okkkkkkk');
 				res.redirect('/');
 			}
-			else 
+			else {
 			console.log(err);
-			console.log('Nehorosho!');
+			console.log('Nehoroshoooo!');
 			res.redirect('/users?err=true');
+			}
 				
 	});
 	//res.redirect('/');//чтоб не произошло зависания

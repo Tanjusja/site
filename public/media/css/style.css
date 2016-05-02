@@ -8,6 +8,10 @@
 	height: 200px;
 }
 
+.btn {
+	white-space:normal;
+}
+
 #header img {
 	float: left;
 }
@@ -27,7 +31,6 @@ h2 {
 	font-size: 50px;
 	font-family: Source Sans, Tahoma;
 	padding: 52px;
-	color: white;
 	display:inline;
 }
 
